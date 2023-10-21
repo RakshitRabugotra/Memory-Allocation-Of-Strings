@@ -73,10 +73,11 @@ function renderTable() {
         // Insert a row inside the table
         let rowElement = memTable.insertRow(row);
         for(let col = 0; col < numColumns; col++) {
+            
             // Insert a new cell
             let cell = rowElement.insertCell(col);
-            cell.innerHTML = `${memArray[i].toString()}`;
-
+            
+            cell.innerHTML = memArray[i].toString();
             // If the cell is empty then don't worry
             if(memArray[i] === 0) continue;
 
